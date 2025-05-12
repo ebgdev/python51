@@ -6,12 +6,12 @@
 # print(pi)                # cikti veya output --> 3
 # print(type(pi))          # output --> <class 'int'>
 # -------------float()-------------
-# num = 4.0
+# num = 4.0               # float or float point 
 # print(num)              # cikti veya output --> 4.0
 # print(type(num))        #  # output --> <class 'float'>
 # -------------str()-------------
 
-# number = 13
+# number = 13                      # str or string 
 # new_number = '13'
 # print(type(number))              # output :  <class 'int'>
 # print(type(new_number))          # output :  <class 'str'>
