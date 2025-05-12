@@ -1,3 +1,5 @@
+# -------------bool()-------------
+
 ## bool data type: True or False
 
 # kapi = True
@@ -10,6 +12,12 @@
 
 # Note: bu kodun ciktisi "hosgeldiniz" olucak cunku sart saglaniyor
 
+# print(bool("")) # --> False
+# print(bool("1")) # --> True
+# print(bool("0")) # --> True
+# print(bool("test")) # --> True
+
+## Bos string disinda diger her string True degeri verir (sonraki derslerde devami var)
 # ------------------------
 
 # sehir = "trabzon"

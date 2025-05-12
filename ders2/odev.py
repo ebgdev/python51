@@ -1,6 +1,6 @@
 # 1 - kullanicidan taban ve yukseklik alinacak (input ile)
 # 2 - ucgenin alani hesaplanacak
-# 3 - sonuc(alan) , int degere cevrilecek
+# 3 - sonuc(alan) , int degere cevrilecek (int() veya (//) kullanilabilir)
 # 4 - bu deger cift mi yoksa tek mi kontrol edilecek
 
 
