@@ -34,10 +34,12 @@
 
 # /	Division (Bolme)	x / y	
 
-# %	Modulus (modul)	x % y	
+# %	Modulus (modul)	x % y	(give the reminder of x/y)(x bolu y'nin kalanini verir)
 
 # **	Exponentiation (Ust)	x ** y	
 # --> ornek : 3 ** 2 --> 3 uzeri 2 --> 9
 
-# //	Floor division	(Kesme) x // y 
-# --> ornek : 3 // 2 --> 1 uzeri 10 // 3 --> 3
+# //	Floor division	(Kesme-asagi dogru yuvarlama) x // y 
+# --> ornek : 3 // 2 --> 1
+# --> ornek : 10 // 3 --> 3
+# --> ornek : 7 // 4 --> 1
