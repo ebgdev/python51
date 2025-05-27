@@ -23,13 +23,3 @@ odemeler = [
 # yukarida sistemimize yapilan tum odemeleri goruntulemekteyiz
 # 100 lira ve uzerinde olan son 10 odemeyi istemekteyiz 
 # ✅ Beklenen Çıktı Örneği: [201, 210, 500, 120, 302, 100, 202, 200, 100.0001, 200]
-
-reverse_list = []
-i = 0
-while len(reverse_list) < 10:
-    if odemeler[-(i+1)] >= 100:
-        reverse_list.append(odemeler[-(i+1)])
-    i+=1
-print(reverse_list)
-
-
