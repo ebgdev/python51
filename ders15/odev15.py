@@ -1,42 +1,16 @@
-musteriler = {
-    1000000001: {
-        'name': 'John',
-        'sur_name': 'Doe',
-        'age': 17,
-        'married': False
-    },
-    1000000002: {
-        'name': 'Jane',
-        'sur_name': 'Smith',
-        'age': 16,
-        'married': True
-    },
-    1000000003: {
-        'name': 'Alice',
-        'sur_name': 'Brown',
-        'age': 22,
-        'married': False
-    },
-    1000000004: {
-        'name': 'Bob',
-        'sur_name': 'Johnson',
-        'age': 45,
-        'married': True
-    },
-    1000000005: {
-        'name': 'Alex',
-        'sur_name': 'Williams',
-        'age': 30,
-        'married': True
-    },
-    1000000006: {
-        'name': 'Zeyd',
-        'sur_name': 'Winson',
-        'age': 30,
-        'married': True
-    }
-}
+# Bu ödevde amaç, verilen bir kelime listesini ilk harflerine göre gruplayarak bir sözlük (dictionary) oluşturmaktır.
+# Görev:
+# Bir kelime listesi veriliyor (örneğin: ['apple', 'banana', 'grape', 'apricot', 'berry', 'cherry']).
+# Her kelime, ilk harfine göre gruplanacak.
+# Sonuç olarak, ilk harfleri anahtar (key), o harfle başlayan kelimeler ise değer (value) olacak şekilde bir sözlük (dictionary) döndürülmeli.
+
+# ----------------------------
+
+# words = ['apple', 'banana', 'grape', 'apricot', 'berry', 'cherry']
+# # output: {'a': ['apple', 'apricot'], 'b': ['banana', 'berry'], 'g': ['grape'], 'c': ['cherry']}
+
+# def group_by_first_letter(words):
+#     pass
 
 
-def group_by_surname_first_letter(d):
-    pass
+
