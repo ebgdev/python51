@@ -22,7 +22,7 @@
 # print(isinstance(var,bool))
 
 # --------------------------------
-# polymorphism (miras-alma)
+# polymorphism , cok bicimlilik (miras-alma ile)
 # DRY : Dont Repeat Yourself
 
 # class User:
