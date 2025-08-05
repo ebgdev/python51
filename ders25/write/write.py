@@ -11,9 +11,6 @@
 
 
 
-    # script_dir = os.path.dirname(__file__)  # The directory of the script
-    # full_path = os.path.join(script_dir, file_name)
-
 import os
 file_name = "names.txt"
 script_dir = os.path.dirname(__file__)  # The directory of the script
