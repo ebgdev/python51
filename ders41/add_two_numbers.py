@@ -42,11 +42,14 @@ def add_two_numbers(l1_node1,l2_node1):
     return head
 
 result = add_two_numbers(l1_node1,l2_node1) # Head
+# Printing the result (linked list)
 cur = result
+astr = ''
 while cur:
-    print(cur.value)
+    astr += f" {cur.value} -> "
     cur = cur.next
+astr += 'None'
 
 
-
-print(add_two_numbers(l1_node1,l2_node1))
+# Print a newline at the end of the output to avoid trailing "->"
+print(astr)  # This adds a newline after printing the linked list
