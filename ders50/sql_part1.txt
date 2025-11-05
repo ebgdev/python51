@@ -1,0 +1,172 @@
+DISTINCT is a SQL keyword (or operator), not a function.
+
+
+------------------------------------
+
+select * from film;
+
+SELECT DISTINCT(release_year) FROM film;
+
+SELECT release_year FROM film;
+
+select count(*) from customer;
+
+select first_name from customer ;
+
+select count(*) from customer;
+
+select count(distinct(first_name)) from customer ;
+
+select distinct(first_name) from customer ;
+
+select first_name , last_name , email from customer ;
+
+select * from city;
+
+select last_name, first_name from actor;
+
+select first_name , last_name from actor;
+
+select * from actor;
+
+select * form actor;
+
+select * form actor
+
+select * from staff ;
+
+select * from store ;
+
+select * from film ;
+
+select * from film;
+
+select * from film;
+
+select * from store ; 
+
+
+------------------------------------
+
+select distinct(rental_rate) from film ;  --> to see the distinct rental_rates 
+
+
+challenge : 
+get the distinct result of rating:
+
+
+1 - select rating from film ;
+2 - select distinct(rating) from film ;
+2.1 - select distinct rating from film ; (also works without parentheses)
+
+
+------------------------------------
+
+select * from payment;
+
+select count(*) from payment;
+
+------------------------------------
+
+select amount from payment;
+
+select distinct amount from payment;
+
+select count(distinct amount) from payment;
+
+select distinct amount from payment order by 1; 
+
+select distinct amount from payment order by amount asc;
+
+select distinct amount from payment order by amount DESC ;
+
+SELECT DISTINCT amount FROM payment ORDER BY 1 ASC;
+
+Note: ASC is default mode so no need to type.
+
+------------------------------------
+LOGICAL OPERATORS
+AND - OR - Not
+
+------------------------------------
+
+WHERE structure:
+
+select col1,col2 from table where conditons;
+
+select name,choice from table where name = 'David' and choice = 'Red'
+
+ex:
+
+lets first explore what is in the customer table
+
+select * from customer;
+
+lets find our customer which named jared:
+
+select * from customer where first_name = 'Jared';
+
+select title,rental_rate from film where rental_rate < 3 order by 2;
+
+select title,rental_rate,replacement_cost from film where rental_rate > 3 and replacement_cost > 19 order by 2,3;
+
+select title,rental_rate,replacement_cost from film where rental_rate > 3 and replacement_cost > 19 and rating ='R' order by rental_rate,replacement_cost;
+
+select count(*) from film where rental_rate > 3 and replacement_cost > 19 and rating ='R';
+
+select title,rating from film where rating ='R' or rating='PG-13';
+
+select count(*) from film where rating ='R' or rating='PG-13';
+
+select title,rating from film where rating !='R' and rating !='PG-13';
+
+
+
+------------------------------------------------------
+challenge 1
+
+find the email for the customer named Nancy Thomas
+
+select email from customer where first_name = 'Nancy' and last_name = 'Thomas' ;
+
+
+challenge 2
+
+what is the description of the movie : Outlaw Hanky
+
+select description from film where title = 'Outlaw Hanky';
+
+SELECT description FROM film WHERE LOWER(title) = LOWER('Outlaw Hanky'); --> case-insensitive
+
+
+challenge 3
+
+get the phone number for the customer who lives at '259 Ipoh Drive'
+
+select phone from address where lower(address) = lower('259 Ipoh Drive');
+
+
+------------------------------------
+
+ORDER BY structure:
+
+select col1,col2 from table order by col1 asc,desc
+the default mode for order by is asc (if leaved blank)
+
+select * from customer order by first_name;
+
+select * from customer order by first_name, last_name;
+|
+| * basically same 
+|
+select * from customer order by first_name, last_name asc ;
+
+
+select * from customer order by first_name, last_name desc ;
+
+
+select store_id , first_name,last_name from customer order by store_id desc , first_name asc ;
+
+
+
+------------------------------------
